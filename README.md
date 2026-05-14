@@ -1,5 +1,4 @@
-# Reto tecnico - Matrices QR y Stats
-# Autor : Julio Carazas (jmcarazas@gmail.com)
+# Matrices QR y Stats
 
 ## Arquitectura
 
