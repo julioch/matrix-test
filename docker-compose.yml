@@ -1,0 +1,24 @@
+services:
+  api-node:
+    build:
+      context: ./api-node
+    environment:
+      PORT: "3000"
+      JWT_SECRET: ${JWT_SECRET}
+      API_KEY: ${API_KEY}
+    ports:
+      - "3001:3000"
+
+  api-go:
+    build:
+      context: ./api-go
+    depends_on:
+      - api-node
+    environment:
+      PORT: "8080"
+      JWT_SECRET: ${JWT_SECRET}
+      API_KEY: ${API_KEY}
+      NODE_API_URL: "http://api-node:3000"
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:5173,http://127.0.0.1:5173}
+    ports:
+      - "8080:8080"
