@@ -74,6 +74,10 @@ En la UI:
 - Click en **Obtener token**
 - Click en **Procesar QR**
 
+Ejemplo :
+
+<img width="1292" height="914" alt="demo" src="https://github.com/user-attachments/assets/4a07c9ae-b9ba-4006-a4c3-50905f9fa63f" />
+
 ## Probar APIs (Insomnia / Postman)
 
 ### 1) Health check
